@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+::selection {
+    background-color: #A855F7;
+    color: #ffffff; 
+}
+
+::-webkit-selection {
+    background-color: #A855F7;
+    color: #ffffff;
+}
+
+*:focus, *:active, *:focus-visible {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+::selection {
+    background-color: #A855F7;
+    color: #ffffff;            
+    
+}
+
+::-moz-selection {
+    background-color: #A855F7;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #1D1D1F;
+}
+.allw{
+    padding: 30px;
+    padding-top: 110px;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+     background-color: #1b1b1d80;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid #3E4042;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+
+.firstlinks{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+}
+
+
+
+.logo{
+    font-family: 'Syne',sans-serif;
+    color: #ffff;
+    font-size: 23px;
+    font-weight: 700;
+
+}
+
+
+.arrb{
+    transform: rotate(-180deg);
+}
+
+
+.docs{
+       font-family: 'Inter', sans-serif;
+    color: #7b7f77;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: all 0.1s ease;
+
+}
+
+
+.blog{
+    font-family: 'Inter', sans-serif;
+    color: #7b7f77;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: all 0.1s ease;
+
+}
+
+
+
+
+.secondlinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+
+.giticon{
+    width: 40px;
+    transition: all 0.2s ease;
+
+    /* filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.9)); */
+
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+
+    /* filter: drop-shadow(0 0 8px #ffffff20); */
+
+}
+
+
+
+.giticon:hover{
+    transform: scale(1.08);
+
+    filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.8)) 
+            drop-shadow(0 0 5px rgba(192, 132, 252, 0.5));
+}
+
+.gmailicon{
+    width: 48px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    transition: all 0.2s ease;
+
+}
+
+.gmailicon:hover{
+    transform: scale(1.08);
+
+    filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.8)) 
+            drop-shadow(0 0 5px rgba(192, 132, 252, 0.5));
+}
+
+.allw{
+    padding: 30px;
+}
+
+
+
+/* Glavni kontejner koji deli stranicu na levu i desnu stranu */
+.about-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.profile-card {
+    flex: 1;
+    background-color: #1B1B1D;
+    border: 1px solid #3E4042;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+
+.avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #8623e2, #4a3063);
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+.avatar-text {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffff;
+}
+
+.profile-info h3 {
+    font-family: 'Syne', sans-serif;
+    color: #ffff;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-info .role {
+    font-family: 'Inter', sans-serif;
+    color: #C084FC; 
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.meta-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutmee{
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+
+}
+
+
+.tag {
+    font-family: 'Inter', sans-serif;
+    background-color: #232326;
+    color: #7b7f77;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover .tag {
+    border-color: rgba(34, 6, 60, 0.2);
+    color: #ffff;
+    cursor: pointer;
+
+}
+
+.profile-card:hover{
+    transform: translateY(-15px);
+}
+
+.about-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.story-section h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.story-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7b7f77;
+    margin-bottom: 15px;
+}
+
+/* Tech Stack Sekcija */
+.skills-section h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-item {
+    font-family: 'Inter', sans-serif;
+    background-color: #1B1B1D;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #3E4042;
+    transition: all 0.3s ease;
+}
+
+/* Efekat svetlucanja kada se pređe mišem preko veština */
+.skill-item:hover {
+    border-color: #A855F7;
+    background-color: #2E1065;
+    color: #C084FC;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* RESPONSIVE: Da izgleda top i na telefonu */
+/* RESPONSIVE: Savršen izgled na telefonu i tabletu */
+@media (max-width: 768px) {
+    .allw {
+        padding: 15px; 
+        padding-top: 95px; /* Smanjujemo spoljni padding da tekst dobije više prostore */
+    }
+
+    .about-container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .story-section h2 {
+        font-size: 28px; /* Smanjujemo glavni naslov da ne puca u 3 reda na telefonu */
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    /* Stil za tvoje podnaslove "Why Zorin OS?", "How I fixed it" itd. */
+    .why {
+        font-size: 22px !important; 
+        margin-bottom: 12px;
+    }
+
+    .story-text {
+        font-size: 15px; /* Blago smanjujemo font teksta za bolju čitljivost na mobilnom */
+        line-height: 1.5;
+        color: #9ca3af; /* Malo svetlija siva kako bi tekst lakše čitao na malom ekranu */
+    }
+}
