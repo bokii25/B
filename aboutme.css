@@ -45,8 +45,13 @@ body{
     left: 0;
     right: 0;
     z-index: 1000;
-
+    transition: transform 0.3s ease-in-out;
 }
+
+.navbar.nav-hidden {
+    transform: translateY(-100%);
+}
+
 
 .firstlinks{
     display: flex;
@@ -311,5 +316,135 @@ body{
     
     .profile-card {
         width: 100%;
+    }
+}
+
+
+
+
+.main-footer {
+    width: 100%;
+    background-color: #161617;
+    border-top: 1px solid #2A2A2C;
+    padding: 80px 0 40px 0;
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #2A2A2C;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-column h4 {
+    font-family: 'Syne', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.footer-column a {
+    font-family: 'Inter', sans-serif;
+    color: #7b7f77;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.sponsors-column {
+    margin-left: auto;
+}
+
+.sponsors-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.open-collective, .github-sponsors {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.open-collective span, .github-sponsors span {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sponsor-btn {
+    height: 32px;
+    padding: 0 14px;
+    background-color: #2D2D30;
+    border: 1px solid #3E4042;
+    color: #ffffff;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.sponsor-btn:hover {
+    background-color: #3e3e42;
+    border-color: #525457;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-family: 'Inter', sans-serif;
+    color: #575953;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sponsors-column {
+        margin-left: 0;
+    }
+    .sponsors-wrapper {
+        flex-direction: column;
+        gap: 24px;
     }
 }
