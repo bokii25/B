@@ -47,8 +47,13 @@ body {
     right: 0;
     z-index: 1000;
 
-  
+  transition: transform 0.3s ease-in-out;
 }
+
+.navbar.nav-hidden {
+    transform: translateY(-100%);
+}
+
 
 .firstlinks {
     display: flex;
